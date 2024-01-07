@@ -13,11 +13,9 @@
  */
 
 use Phpfastcache\CacheManager;
-use Phpfastcache\Drivers\Couchdb\Config as CouchdbConfig;
 use Phpfastcache\EventManager;
 use Phpfastcache\Exceptions\PhpfastcacheDriverConnectException;
 use Phpfastcache\Tests\Helper\TestHelper;
-use Phpfastcache\Tests\Config\ConfigFactory;
 
 chdir(__DIR__);
 require_once __DIR__ . '/../vendor/autoload.php';
