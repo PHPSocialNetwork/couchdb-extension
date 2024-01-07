@@ -38,6 +38,7 @@ try {
     });
     $cacheInstance = CacheManager::getInstance('Couchdb', include $configFileName);
     $testHelper->runCRUDTests($cacheInstance);
+    $testHelper->runGetAllItemsTests($cacheInstance);
 } catch (PhpfastcacheDriverConnectException $e) {
     $testHelper->assertSkip('Couchdb server unavailable: ' . $e->getMessage());
     $testHelper->terminateTest();
