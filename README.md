@@ -23,9 +23,12 @@ composer install phpfastcache/couchdb-extension
 ```
 
 #### ⚠️ This extension requires:
-1️ The composer `doctrine/couchdb` library `dev-master#9eeb9e5` at least.
+1️ The composer `doctrine/couchdb` library `dev-master#9eeb9e5` at least.\
+**You MUST ensure that the dependency is at least at commit `9eeb9e5` due to a serious bug in `doctrine/couchdb` that causes infinite loop.**
 
 ## Events
+This driver is emitting [customs events](https://github.com/PHPSocialNetwork/phpfastcache/blob/master/docs/EVENTS.md):
+
 - onCouchdbCreateOptions(*Callable* **$callback**)
     - **Callback arguments**
         - *ExtendedCacheItemPoolInterface* **$itemPool**
