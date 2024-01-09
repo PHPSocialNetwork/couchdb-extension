@@ -2,4 +2,4 @@
 ##### 10 january 2024
 - __Driver Core__
     - Driver is maintained by @Geolim4
-    - `Xouchdb` is now an extension separated from the main Phpfastcache repository.
+    - `Couchdb` is now an extension separated from the main Phpfastcache repository.
